@@ -1,7 +1,7 @@
 Palmate Web sohbet ekranı entegrasyonu için sayfaya eklenmesi beklenen JavaScript dosyası aşağıdaki URL’de yer almaktadır. 
 
 ```
-https://cdn.jsdelivr.net/gh/plmrtch/agent-webchat-sdk/webchat.js
+https://cdn.jsdelivr.net/gh/plmrtch/agent-webchat-sdk@latest/webchat.js
 ```
 
 İlgili JavaScript dosyasını sayfaya implemente edecek olan HTML - JS kod parçacağı ise aşağıdaki gibidir. 
