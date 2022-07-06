@@ -16,8 +16,7 @@ function deviceType() {
 
 var palamar_token = _pproject[0][1] ? _pproject[0][1] : '';
 
-// const url_base = 'http://localhost:3000/callcenter/';
-const url_base = 'http://palmate.palamar.com.tr/callcenter/';
+const url_base = 'https://palmate.palamar.com.tr/callcenter/';
 
 var _pp_iframe = document.createElement('iframe');
 _pp_iframe.src = `${url_base}webchat?token=${palamar_token}`;
@@ -83,7 +82,6 @@ function minimizeClick() {
 }
 
 window.addEventListener('message', (event) => {
-  console.log('POPUP MESSAGE CALLED', event.data);
   if (event.data == 'minimizeClicked') {
     document.getElementById('_palamar_chat_iframe').style.visibility = 'hidden';
     document.getElementById('_palamar_btn_iframe').style.opacity = 100;
