@@ -1,4 +1,4 @@
-//this js file creates iframe area
+//this js file creates iframe area.
 
 function deviceType() {
   const ua = navigator.userAgent;
