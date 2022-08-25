@@ -23,7 +23,7 @@ _pp_iframe.src = `${url_base}webchat?token=${palamar_token}`;
 
 if (deviceType() == 'mobile') {
   _pp_iframe.style.position = 'fixed';
-  _pp_iframe.style.height = '100vh';
+  _pp_iframe.style.height = '0';
   _pp_iframe.style.width = '100vw';
   _pp_iframe.style.top = '0';
   _pp_iframe.style.left = '0';
@@ -31,14 +31,15 @@ if (deviceType() == 'mobile') {
   _pp_iframe.style.position = 'fixed';
   _pp_iframe.style.right = '50px';
   _pp_iframe.style.bottom = '70px';
+  _pp_iframe.style.height = '0%';
+  _pp_iframe.style.opacity = 0;
   _pp_iframe.style.height = '90%';
   _pp_iframe.style.maxHeight = '650px';
   _pp_iframe.style.width = '450px';
+  _pp_iframe.style.transition = 'all .7s ease-in-out';
 }
 
 _pp_iframe.style.border = 'none';
-//_pp_iframe.style.opacity = '0';
-_pp_iframe.style.visibility = 'hidden';
 
 _pp_iframe.style.zIndex = '99999';
 _pp_iframe.style.padding = '0';
@@ -66,7 +67,7 @@ _pp_btn_iframe.style.padding = '0';
 _pp_btn_iframe.style.background = 'none';
 _pp_btn_iframe.style.borderRadius = '8px';
 _pp_btn_iframe.id = '_palamar_btn_iframe';
-_pp_btn_iframe.style.transition = 'opacity 0.5s ease-in-out';
+_pp_btn_iframe.style.transition = 'all 0.7s ease-in-out';
 _pp_btn_iframe.onload = btnIframeclick;
 
 function btnIframeclick() {
@@ -83,11 +84,15 @@ function minimizeClick() {
 
 window.addEventListener('message', (event) => {
   if (event.data == 'minimizeClicked') {
-    document.getElementById('_palamar_chat_iframe').style.visibility = 'hidden';
+    document.getElementById('_palamar_chat_iframe').style.height = '0%';
+    document.getElementById('_palamar_chat_iframe').style.opacity = 0;
+    
     document.getElementById('_palamar_btn_iframe').style.opacity = 100;
   } else if (event.data == 'popupClicked') {
-    document.getElementById('_palamar_chat_iframe').style.visibility =
-      'visible';
+    document.getElementById('_palamar_chat_iframe').style.height =
+      '100%';
+    document.getElementById('_palamar_chat_iframe').style.opacity = 100;
+
     document.getElementById('_palamar_btn_iframe').style.opacity = 0;
   }
 });
