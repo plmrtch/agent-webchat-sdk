@@ -33,7 +33,6 @@ if (deviceType() == 'mobile') {
   _pp_iframe.style.bottom = '70px';
   _pp_iframe.style.height = '0%';
   _pp_iframe.style.opacity = 0;
-  _pp_iframe.style.height = '90%';
   _pp_iframe.style.maxHeight = '650px';
   _pp_iframe.style.width = '450px';
   _pp_iframe.style.transition = 'all .7s ease-in-out';
