@@ -47,7 +47,6 @@ _pp_iframe.style.background = 'none';
 _pp_iframe.style.boxShadow = 'rgb(0 0 0 / 25%) 0px 4px 16px';
 _pp_iframe.style.borderRadius = '8px';
 _pp_iframe.id = '_palamar_chat_iframe';
-_pp_iframe.style.transition = 'opacity 0.5s ease-in-out';
 _pp_iframe.onload = minimizeClick;
 
 var _pp_btn_iframe = document.createElement('iframe');
