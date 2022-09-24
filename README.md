@@ -1,7 +1,7 @@
 Palmate Web sohbet ekranı entegrasyonu için sayfaya eklenmesi beklenen JavaScript dosyası aşağıdaki URL’de yer almaktadır. 
 
 ```
-https://cdn.jsdelivr.net/gh/plmrtch/agent-webchat-sdk@latest/webchat.js
+https://public.palmate.ai/iframe/popup.js
 ```
 
 İlgili JavaScript dosyasını sayfaya implemente edecek olan HTML - JS kod parçacağı ise aşağıdaki gibidir. 
@@ -18,7 +18,7 @@ https://cdn.jsdelivr.net/gh/plmrtch/agent-webchat-sdk@latest/webchat.js
           var pp = document.createElement('script');
           pp.type = 'text/javascript';
           pp.async = true;
-          pp.src = 'https://cdn.jsdelivr.net/gh/plmrtch/agent-webchat-sdk/webchat.js';
+          pp.src = 'https://public.palmate.ai/iframe/popup.js';
           var s = document.getElementsByTagName('script')[0];
           s.parentNode.insertBefore(pp, s);
 
