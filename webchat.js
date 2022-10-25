@@ -35,7 +35,6 @@ if (deviceType() == 'mobile') {
   _pp_iframe.style.opacity = 0;
   _pp_iframe.style.maxHeight = '650px';
   _pp_iframe.style.width = '450px';
-  _pp_iframe.style.transition = 'all .7s ease-in-out';
 }
 
 _pp_iframe.style.border = 'none';
@@ -65,7 +64,6 @@ _pp_btn_iframe.style.padding = '0';
 _pp_btn_iframe.style.background = 'none';
 _pp_btn_iframe.style.borderRadius = '8px';
 _pp_btn_iframe.id = '_palamar_btn_iframe';
-_pp_btn_iframe.style.transition = 'all 0.7s ease-in-out';
 _pp_btn_iframe.onload = btnIframeclick;
 
 function btnIframeclick() {
